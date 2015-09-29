@@ -15,5 +15,7 @@
         <%= render @microposts %>
       </ol>
     <% end %>
+    <span><%= link_to "フォローしている" , followings_user_path(@user) %></span>
+    <span><%= link_to "フォローされている" , followers_user_path(@user) %></span>
   </div>
 </div>

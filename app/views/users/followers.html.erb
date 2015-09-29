@@ -1,0 +1,17 @@
+<h1>followers users (<%= current_user.name %>) </h1>
+<h3>フォロワー数:<%= @followers.count %></h3>
+<div class="row"> 
+   <% @followers.each do |followers| %>
+    <div class='col-sm-4'>
+       <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class='panel-title'><%= followers.name %></h4>
+        </div>
+
+         <div class='panel-footer'>
+          <%= link_to 'プロフィールを確認', followers, class: "btn btn-primary" %>
+         </div>
+       </div>
+    </div>
+    <% end %>
+ </div>
