@@ -11,8 +11,9 @@
     <div class="col-md-8">
       <h3>Micropost Feed</h3>
       <%= render 'shared/feed' %>
+      <%= paginate(@users) %>
     </div>
-  </div>
+   </div>
 <% else %>
   <div class="center jumbotron">
     <h1>Welcome to the Microposts</h1>
